@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural - Rede Ressoar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Importando uma fonte limpa semelhante à do site */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-700 antialiased p-4 md:p-8">
+
+    <!-- Container Centralizado -->
+    <div class="max-w-2xl mx-auto">
+
+        <!-- Título do Mural (Azul vibrante do Manifesto) -->
+        <h2 class="text-2xl font-bold text-[#064790] mb-6">Mural de Mensagens</h2>
+
+        <!-- Formulário de Nova Postagem (Arredondado e Limpo) -->
+        <div class="flex gap-3 mb-10">
+            <input 
+                type="text" 
+                placeholder="O que estamos construindo hoje?" 
+                class="flex-1 bg-white border border-slate-200 rounded-full px-6 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#5ba4c7]/50 shadow-sm"
+            >
+            <!-- Botão com o Azul-Celeste suave do site -->
+            <button class="bg-[#5ba4c7] hover:bg-[#4a8eb0] text-white font-medium px-8 py-3 rounded-full transition-colors shadow-sm">
+                Enviar
+            </button>
+        </div>
+
+        <!-- Feed de Postagens -->
+        <ul class="space-y-8">
+            
+            <!-- Card Principal (Design Orgânico e Arredondado) -->
+            <li class="bg-white rounded-[2rem] shadow-sm border border-slate-100 overflow-hidden flex flex-col">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="p-6 pb-4 flex items-center gap-4">
+                    <!-- Avatar -->
+                    <div class="w-12 h-12 rounded-full bg-[#064790] flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                        C
+                    </div>
+                    <div class="flex flex-col">
+                        <strong class="text-[#064790] font-semibold text-base">Associação Cora</strong>
+                        <span class="text-slate-400 text-sm">Hoje, às 09:00</span>
+                    </div>
+                </div>
+
+                <!-- Imagem da Postagem com cantos internos suaves -->
+                <div class="px-6">
+                    <div class="w-full h-64 bg-slate-100 rounded-2xl flex items-center justify-center text-slate-400 text-sm border border-slate-100">
+                        [ Imagem do chalé de solo-cimento secando ao sol ]
+                    </div>
+                </div>
+
+                <!-- Conteúdo e Texto -->
+                <div class="p-6 pt-4 flex flex-col gap-6">
+                    <p class="text-slate-600 text-[15px] leading-relaxed">
+                        As paredes do nosso novo espaço de convivência estão subindo! Precisamos de um último empurrão coletivo para garantir o lote final de materiais orgânicos da cobertura estrutural.
+                    </p>
+
+                    <!-- Caixa de Financiamento Coletivo (Design Integrado) -->
+                    <div class="bg-[#f8fafc] border border-slate-100 rounded-[1.5rem] p-6">
+                        
+                        <!-- Progresso -->
+                        <div class="flex justify-between items-end mb-3">
+                            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Progresso da Meta</span>
+                            <!-- Rosa vibrante da palavra "regenere" -->
+                            <strong class="text-[#c94b7e] font-bold text-lg">75%</strong>
+                        </div>
+                        
+                        <!-- Barra de Progresso Arredondada -->
+                        <div class="w-full bg-slate-200 rounded-full h-3 mb-2 overflow-hidden">
+                            <!-- Amarelo solar -->
+                            <div class="bg-[#ffcc29] h-3 rounded-full" style="width: 75%"></div>
+                        </div>
+                        
+                        <p class="text-sm text-slate-500 mb-5">Faltam apenas R$ 450,00 (ou 450 Sementes)</p>
+
+                        <!-- Botão de Apoio (Pílula, seguindo o padrão do site) -->
+                        <div id="area-pagamento-123">
+                            <button 
+                                hx-get="/api/gerar-pix?campanha=123" 
+                                hx-target="#area-pagamento-123" 
+                                hx-swap="innerHTML"
+                                class="w-full bg-[#5ba4c7] hover:bg-[#4a8eb0] text-white font-medium py-3.5 px-6 rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+                                Apoiar com Sementes ou PIX
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
