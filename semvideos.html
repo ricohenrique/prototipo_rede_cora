@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Ressoar</title>
+    <style>
+        .order-1 { order: 1; }
+        .order-2 { order: 2; }
+        .lg:order-1 { order: 1; }
+        .lg:order-2 { order: 2; }
+        .aspect-[9/16] { padding-top: 56.25%; position: relative; }
+        .aspect-[9/16]::before { content: ''; display: block; padding-top: 56.25%; }
+        .aspect-[9/16] video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+    <section class="max-w-7xl mx-auto w-full px-6 py-12 mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Imagem (Esquerda) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="w-full max-w-[280px] bg-white p-2.5 rounded-[2.5rem] shadow-xl border border-stone-200 relative transition-transform hover:-translate-y-2 duration-500">
+                    <div class="aspect-[9/16] bg-slate-900 rounded-[2rem] overflow-hidden relative">
+                        <img src="capa-nova-terra.jpg" alt="Capa Nova Terra" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Texto (Direita) -->
+            <div class="lg:col-span-7 flex flex-col gap-6 z-10 text-center lg:text-left">
+                <span class="text-[#c94b7e] font-bold tracking-wider uppercase text-sm block">Expansão da Teia</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#064790] leading-tight">
+                    Transforme sua terra em um território regenerativo
+                </h2>
+                <p class="text-stone-600 text-lg leading-relaxed">
+                    Você tem uma área e o sonho de transformá-la em uma ecovila? Ou já possui um projeto e quer unir forças? A Rede Ressoar oferece um <strong>modelo validado de arcabouço jurídico, governança sociocrática e estrutura econômica</strong> para tirar isso do papel.
+                </p>
+                
+                <ul class="text-stone-600 space-y-4 text-left max-w-lg mx-auto lg:mx-0 mt-2">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-[#5ba4c7] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Apoio na estruturação jurídica, cotas e posse segura.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-[#5ba4c7] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Implementação do modelo de gestão por consentimento (Sociocracia).</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-[#5ba4c7] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Integração à nossa economia circular e moeda social (Sementes).</span>
+                    </li>
+                </ul>
+
+                <div class="pt-6">
+                    <a href="LINK_DO_FORM_NOVAS_TERRAS" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#064790] text-[#064790] hover:bg-[#064790] hover:-translate-y-1 hover:text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md text-lg w-full sm:w-auto">
+                        <span>Inscrever minha terra ou projeto</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto w-full px-6 py-12 mb-24">
+        <div class="bg-[#064790] text-white rounded-[3rem] p-8 md:p-12 lg:p-16 relative overflow-hidden shadow-xl">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-[#5ba4c7]/20 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#c94b7e]/20 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                <!-- Imagem (Esquerda) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-[280px] bg-white p-2.5 rounded-[2.5rem] shadow-xl border border-white/20 relative transition-transform hover:-translate-y-2 duration-500">
+                        <div class="aspect-[9/16] bg-slate-900 rounded-[2rem] overflow-hidden relative">
+                            <img src="capa-mantenedores.jpg" alt="Capa Mantenedores" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Texto (Direita) -->
+                <div class="lg:col-span-7 flex flex-col gap-6 text-center lg:text-left">
+                    <span class="text-[#ffcc29] font-bold tracking-wider uppercase text-sm block">Programa de Mantenedores</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-2">Regenere com a gente, mês a mês</h2>
+                    <p class="text-blue-100 text-lg leading-relaxed">
+                        Ao assinar um apoio mensal, você fortalece o Fundo de Expansão da rede e acumula a nossa moeda social (Sementes) para utilizar em vivências, produtos ou estadias na ecovila.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#apoiar" class="inline-block bg-[#ffcc29] hover:bg-[#e6b825] hover:-translate-y-1 text-[#064790] font-bold py-4 px-10 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
+                            Quero ser Mantenedor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-7xl mx-auto w-full px-6 py-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-slate-500 text-sm text-center md:text-left flex flex-col gap-1">
+            <strong class="text-slate-700">Associação Rede Ressoar · CNPJ 61.460.097/0001-00 · Organização sem fins lucrativos</strong>
+        </div>
+    </footer>
+</body>
+</html>
